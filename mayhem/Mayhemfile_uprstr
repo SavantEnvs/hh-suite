@@ -1,0 +1,5 @@
+project: savantenvs/hh-suite
+target: uprstr
+cmds:
+  - cmd: /mayhem/fuzz_uprstr
+    libfuzzer: true
