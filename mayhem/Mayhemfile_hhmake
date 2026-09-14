@@ -1,0 +1,10 @@
+project: savantenvs/hh-suite
+target: hhmake-buggy-mhh-run-13
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/hhmake-buggy-mhh-run-13/testsuite
+cmds:
+  - cmd: /mayhem/build/src/hhmake -i /test.fa -o /dev/null
+    filepath: /test.fa
+    env:
+      DISABLE_SMOKETEST: '1'
